@@ -27,6 +27,10 @@ a{
     text-decoration: none;
 }
 
+.base{
+    width: 60%;
+}
+
 .link-card{
     position: relative;
     box-shadow: 2px 2px 15px #ccc;
@@ -35,11 +39,18 @@ a{
     font-size: 2em;
     right: 1.5em;
     padding:.5em;
+    transition: all 0.3s ease-in-out;
 }
 
 .link-card:hover{
     background: #333;
     color:#ccc;
+    box-shadow: 2px 2px 15px #999;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-card-text{
+    font-size: .7em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -48,16 +59,18 @@ a{
     transition: all 0.3s ease-in-out;
 }
 
+.icon-bilibili{
+    color:#fb7299;
+}
 .icon{
     width:40%;
-
 }
 .icon::before{
     font-size: 3em;
 }
 
 .cover{
-    width: 30%;
+    width: 20%;
     border-radius: 100em;
 }
 
