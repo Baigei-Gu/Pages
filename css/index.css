@@ -1,84 +1,94 @@
-:root{
+:root {
     font-size: 2vw;
-    color:#333;
+    color: #333;
 }
 
-body{
-    margin: 0;
-}
-
-body{
+body {
     display: flex;
-    flex-direction:row;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
     box-shadow: 2px 2px 15px #ccc;
     margin: 5%;
-    padding: 2%;
+    padding: 5%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color:#000;
+    color: #000;
 }
 
-a{
-    color:#333;
+a {
+    color: #333;
     text-decoration: none;
 }
 
-.base{
-    width: 60%;
-}
 
-.link-card{
-    position: relative;
-    display: flex;
+
+.link-card {
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
+    margin: .1em auto;
+    flex-wrap:nowrap;
     box-shadow: 2px 2px 15px #ccc;
-    height: 40%;
-    width: 100%;
-    font-size: 2em;
-    right: 1.5em;
-    padding:.5em;
+    height: 30%;
+    width:80%;
+    font-size: 3.5em;
+    padding: .2em;
+    padding-top: 0;
+
     transition: all 0.3s ease-in-out;
 }
 
-.link-card:hover{
+.link-card:hover {
     background: #333;
-    color:#ccc;
-    box-shadow: 2px 2px 15px #999;
+    color: #ccc;
+    box-shadow: 2px 2px 15px #333;
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text{
-    font-size: .7em;
+.link-card-text {
+    font-size: .6em;
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text:hover{
-    color:#fff;
+.link-card-text:hover {
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-.icon-bilibili{
-    color:#fb7299;
+.icon-bilibili {
+    color: #fb7299;
 }
-.icon{
-    width:40%;
+
+.icon {
+    width: 40%;
+    
 }
-.icon::before{
+
+.icon::before {
     font-size: 3em;
 }
 
-.cover{
-    width: 20%;
-    border-radius: 100em;
+.cover {
+    position: relative;
+    width: 30%;
+    border-radius: 50em;
+    box-shadow: 2px 2px 15px #ccc;
+    transition: all 0.5s ease-in-out;
 }
 
+.cover:hover{
+    box-shadow: 2px 2px 15px #888;
+    transition: all 0.2s ease-in-out;
+}
+
+.page-end{
+    font-weight: 300;
+}
 
 @media screen and (max-width:900px) {
-    :root{
-        font-size:16px;
+    :root {
+        font-size: 16px;
     }
 }
