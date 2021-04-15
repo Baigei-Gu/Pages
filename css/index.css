@@ -1,15 +1,15 @@
-:root{
+:root {
     font-size: 2vw;
-    color:#333;
+    color: #333;
 }
 
-body{
+body {
     margin: 0;
 }
 
-body{
+body {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     box-shadow: 2px 2px 15px #ccc;
@@ -17,21 +17,26 @@ body{
     padding: 2%;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
-    color:#000;
+    color: #000;
 }
 
-a{
-    color:#333;
+a {
+    color: #333;
     text-decoration: none;
 }
 
-.base{
+.base {
     width: 60%;
 }
 
-.link-card{
+.link-card {
     position: relative;
     display: flex;
     align-items: center;
@@ -40,45 +45,47 @@ a{
     width: 100%;
     font-size: 2em;
     right: 1.5em;
-    padding:.5em;
+    padding: .5em;
     transition: all 0.3s ease-in-out;
+    z-index: 5;
 }
 
-.link-card:hover{
+.link-card:hover {
     background: #333;
-    color:#ccc;
-    box-shadow: 2px 2px 15px #999;
+    color: #ddd;
+    box-shadow: 2px 2px 15px #888;
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text{
+.link-card-text {
     font-size: .7em;
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text:hover{
-    color:#fff;
+.link-card-text:hover {
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-.icon-bilibili{
-    color:#fb7299;
+.icon-bilibili {
+    color: #fb7299;
 }
-.icon{
-    width:40%;
+
+.icon {
+    width: 40%;
 }
-.icon::before{
+
+.icon::before {
     font-size: 3em;
 }
 
-.cover{
+.cover {
     width: 20%;
     border-radius: 100em;
 }
 
-
 @media screen and (max-width:900px) {
-    :root{
-        font-size:16px;
+     :root {
+        font-size: 16px;
     }
 }
