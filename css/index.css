@@ -27,20 +27,27 @@ a {
     text-decoration: none;
 }
 
+.link-me {
+    column-count: 2;
+    margin-top: 2em;
+}
+
 .link-card {
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    margin: .1em auto;
-    flex-wrap: nowrap;
+    margin: 0 auto;
     box-shadow: 2px 2px 15px #ccc;
     height: 30%;
-    width: 80%;
+    width: 40%;
     font-size: 3.5em;
     padding: .2em;
-    padding-top: 0;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
     transition: all 0.3s ease-in-out;
     z-index: 5;
+}
+
+.link-card-text {
+    font-size: .6em;
+    transition: all 0.3s ease-in-out;
 }
 
 .link-card:hover {
@@ -50,18 +57,8 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text {
-    font-size: .6em;
-    transition: all 0.3s ease-in-out;
-}
-
-.link-card-text:hover {
-    color: #fff;
-    transition: all 0.3s ease-in-out;
-}
-
-.icon-bilibili {
-    color: #fb7299;
+.link-card:hover .link-card-text {
+    color: #ccc;
 }
 
 .icon {
@@ -70,6 +67,10 @@ a {
 
 .icon::before {
     font-size: 3em;
+}
+
+.icon-bilibili {
+    color: #fb7299;
 }
 
 .cover {
