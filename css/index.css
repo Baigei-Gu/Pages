@@ -4,17 +4,12 @@
 }
 
 body {
-    margin: 0;
-}
-
-body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
     box-shadow: 2px 2px 15px #ccc;
     margin: 5%;
-    padding: 2%;
+    padding: 5%;
 }
 
 h1,
@@ -32,33 +27,31 @@ a {
     text-decoration: none;
 }
 
-.base {
-    width: 60%;
-}
-
 .link-card {
-    position: relative;
-    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
+    margin: .1em auto;
+    flex-wrap: nowrap;
     box-shadow: 2px 2px 15px #ccc;
-    height: 40%;
-    width: 100%;
-    font-size: 2em;
-    right: 1.5em;
-    padding: .5em;
+    height: 30%;
+    width: 80%;
+    font-size: 3.5em;
+    padding: .2em;
+    padding-top: 0;
     transition: all 0.3s ease-in-out;
     z-index: 5;
 }
 
 .link-card:hover {
     background: #333;
-    color: #ddd;
-    box-shadow: 2px 2px 15px #888;
+    color: #ccc;
+    box-shadow: 2px 2px 15px #333;
     transition: all 0.3s ease-in-out;
 }
 
 .link-card-text {
-    font-size: .7em;
+    font-size: .6em;
     transition: all 0.3s ease-in-out;
 }
 
@@ -80,8 +73,20 @@ a {
 }
 
 .cover {
-    width: 20%;
-    border-radius: 100em;
+    position: relative;
+    width: 30%;
+    border-radius: 50em;
+    box-shadow: 2px 2px 15px #ccc;
+    transition: all 0.5s ease-in-out;
+}
+
+.cover:hover {
+    box-shadow: 2px 2px 15px #888;
+    transition: all 0.2s ease-in-out;
+}
+
+.page-end {
+    font-weight: 300;
 }
 
 @media screen and (max-width:900px) {
