@@ -13,7 +13,12 @@ body {
     padding: 5%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: #000;
 }
@@ -23,37 +28,22 @@ a {
     text-decoration: none;
 }
 
-.icon {
-    width: 40%;
-    
+.link-me {
+    column-count: 2;
+    margin-top: 2em;
 }
-
-.icon::before {
-    font-size: 3em;
-}
-
 
 .link-card {
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    margin: .1em auto;
-    flex-wrap:nowrap;
+    margin: 0 auto;
     box-shadow: 2px 2px 15px #ccc;
     height: 30%;
-    width:80%;
+    width: 80%;
     font-size: 3.5em;
     font-weight: 500;
     padding: .2em;
-    padding-top: 0;
+    margin-bottom: 5%;
     transition: all 0.3s ease-in-out;
-}
-
-.link-card-github:hover {
-    background: #333;
-    color: #ccc;
-    box-shadow: 2px 2px 15px #333;
-    transition: all 0.3s ease-in-out;
+    z-index: 5;
 }
 
 .link-card-bilibili:hover {
@@ -78,15 +68,21 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text:hover {
-    color: #fff;
+.link-card:hover {
+    background: #333;
+    color: #ccc;
+    box-shadow: 2px 2px 15px #333;
     transition: all 0.3s ease-in-out;
 }
+
+.link-card:hover .link-card-text {
+    color: #ccc;
+}
+
 
 .icon-bilibili {
     color: #fb7299;
 }
-
 
 .cover {
     position: relative;
@@ -96,17 +92,20 @@ a {
     transition: all 0.5s ease-in-out;
 }
 
-.cover:hover{
+.cover:hover {
     box-shadow: 2px 2px 15px #888;
     transition: all 0.2s ease-in-out;
 }
 
-.page-end{
+.page-end {
     font-weight: 300;
 }
 
 @media screen and (max-width:900px) {
-    :root {
-        font-size: 16px;
+     :root {
+        font-size: 4vmin;
+    }
+    .link-card-text {
+        font-size: .5em;
     }
 }
