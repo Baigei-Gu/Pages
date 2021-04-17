@@ -34,6 +34,7 @@ a {
 }
 
 .link-card {
+
     margin: 0 auto;
     box-shadow: 2px 2px 15px #ccc;
     height: 30%;
@@ -84,6 +85,9 @@ a {
     color: #fb7299;
 }
 
+.icon{
+    font-size:.7em;
+}
 .cover {
     position: relative;
     width: 30%;
