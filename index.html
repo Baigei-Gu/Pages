@@ -8,7 +8,34 @@
     <title>Baigei Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2488234_co7kiui3mr.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {font-family: "iconfont";
+        src: url('//at.alicdn.com/t/font_2488234_co7kiui3mr.eot?t=1618411739060'); /* IE9 */
+        src: url('//at.alicdn.com/t/font_2488234_co7kiui3mr.eot?t=1618411739060#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQwAAsAAAAACIgAAAPhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqEbINtATYCJAMMCwgABCAFhG0HOxs4B8geibGtgr2EKOvNd0U8fK2h7+/uXRBcooBdPI+PAgAjMnFAurpGl4XsVFUDCZ15381SebsCc8nUJWVFNLATs8KJmH8eCRDw4fNcTu/agvNbltNYU+f2o16A8daA9sY2JVogAWLsDWMXtMTjBJoNCkMsFZTVAUZhjgvEFSfuBkzGpjQUh0ahrlhaxAuoNKZb8goAnoPPx18QE0NSZebU5ZP8PpD1I+CDDTXaNBpseQSQT+cBW0XGFKAQO5W+NVQUm0JpVnV0c3atCGmqoMlEINM0tfWHRxJEzdS1IuaYNl2U3BGR+GWjuGr5wxlq1P4FAP8neDGhWnC1tTdPGHbnTt2dh/W80ZG4c811WYhhUeDagy4b76YuD713r2HM7tBFq93GnC0/Py3/+nmwcKXzxp2g8xb8Umcwn3e6/7jh3j3togCDvbnNmb9hOwcweqMDL7K4X7/YkTB2jbafv8fRYI1yIoybnRzWb3Sp5ws0N5J4AA92vr6pu/u2/v77xnvv2hds8FsjNH+7b5PrIoJ647b8eqKoYzfjYqf1/rxDvajRGHr2ujiMKrF+qWjt3o1LXcgFkIIryHdn3Jc6LltKG+J+PWUqK0QH825duLd7dLbjKq8ie8JbX0zjBlIPWxoXuR4iJ+4rl5Wf05OHXBc1tkByANeX0KYPDjrm6S9D/BLKcZn70vdnwJfTSHzmRcfKOSdhGmP2zXrQnbkCpaV8k+U51zi19fSrvp9QvMIrzKvuJbQ+QH0IsRqxLeEjTpgJpq/7RUStJ8neVV4PaQjph8ACoatKbtF9I3aUcITbsqyBfyvuuxNE2hfapj26/N9BuNIQmHhuYXNFtn3+prP2ltVBNksnb6jrS4KRG1+SdDYH4PUZdYTy/t/fsfROPanTKu0vIyrg+1LvR8HI19E0yNeARunm9f6uvGNZ0ZSmPRdF5siMZHYDqncngRKu909Loduz4YE+IPGERi6HSBoMIGs0RBbmFCotZlBrNItmkwpXt+ihQYnShAkTAEKn7UjavUfW6SpZmE9R6fcVtc4oNFsJuy1bjMQJczWoG6M+2DMEcr1KBWs7sTAsrkFinaxbk1YG3Aak0XJBGB0RlU8WIgXSTDFDqxfHYMxCVqOUwwJwGpLJlFClUUpQL47ox1iVEhnJVj0polcpB0KLNJBuGNIH6jEExOmlpMB61TFh4f01EDEdmW6aBkpVvAGiocV1DkWLENWBLNQpOlFu5RwtPbEYGMaCWBpKclAB8CAyK6YEqaoHSSC9sAj9AyIqKSJRJbarLmJ5g/z91kAzc68cKXIU9SmH+3U9TA8n4xwrAAAAAA==') format('woff2'),
+        url('//at.alicdn.com/t/font_2488234_co7kiui3mr.woff?t=1618411739060') format('woff'),
+        url('//at.alicdn.com/t/font_2488234_co7kiui3mr.ttf?t=1618411739060') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+        url('//at.alicdn.com/t/font_2488234_co7kiui3mr.svg?t=1618411739060#iconfont') format('svg'); /* iOS 4.1- */
+      }
+      
+      .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      .icon-github:before {
+        content: "\e811";
+      }
+      
+      .icon-bilibili:before {
+        content: "\e626";
+      }
+    </style>
 </head>
 
 <body>
@@ -19,14 +46,14 @@
             <p>摸不到鱼不快乐</p>
         </div>
         <div class="link-me">
-            <div class="link-card">
+            <div class="link-card link-card-bilibili">
                 <i class="icon-bilibili iconfont icon"></i>
-                <a class="link-card-text" href="https://space.bilibili.com/38988316">BiliBili</a>
+                <a class="link-card-text-bilibili" href="https://space.bilibili.com/38988316">BiliBili</a>
             </div>
             <br>
-            <div class="link-card">
+            <div class="link-card link-card-github">
                 <i class="icon-github iconfont icon"></i>
-                <a class="link-card-text" href="https://github.com/Baigei-Gu">Github</a>
+                <a class="link-card-text-github" href="https://github.com/Baigei-Gu">Github</a>
             </div>
         </div>
         <div class="page-end">

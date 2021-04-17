@@ -1,6 +1,7 @@
 :root {
     font-size: 2vw;
     color: #333;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 body {
@@ -22,6 +23,14 @@ a {
     text-decoration: none;
 }
 
+.icon {
+    width: 40%;
+    
+}
+
+.icon::before {
+    font-size: 3em;
+}
 
 
 .link-card {
@@ -34,20 +43,37 @@ a {
     height: 30%;
     width:80%;
     font-size: 3.5em;
+    font-weight: 500;
     padding: .2em;
     padding-top: 0;
-
     transition: all 0.3s ease-in-out;
 }
 
-.link-card:hover {
+.link-card-github:hover {
     background: #333;
     color: #ccc;
     box-shadow: 2px 2px 15px #333;
     transition: all 0.3s ease-in-out;
 }
 
-.link-card-text {
+.link-card-bilibili:hover {
+    background: #fb7299;
+    color: #fff;
+    box-shadow: 2px 2px 15px #333;
+    transition: all 0.3s ease-in-out;
+}
+.link-card-bilibili:hover .icon-bilibili{
+    color:#fff;
+}
+.link-card-bilibili:hover .link-card-text-bilibili {
+    color: #fff;
+}
+.link-card-github:hover .link-card-text-github {
+    color: #fff;
+}
+
+.link-card-text-bilibili,
+.link-card-text-github {
     font-size: .6em;
     transition: all 0.3s ease-in-out;
 }
@@ -61,14 +87,6 @@ a {
     color: #fb7299;
 }
 
-.icon {
-    width: 40%;
-    
-}
-
-.icon::before {
-    font-size: 3em;
-}
 
 .cover {
     position: relative;
