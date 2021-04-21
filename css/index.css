@@ -56,6 +56,14 @@ a {
     z-index: 5;
 }
 
+
+.link-card:hover {
+    background: #333;
+    color: #ccc;
+    box-shadow: 2px 2px 15px #333;
+    transition: all 0.3s ease-in-out;
+}
+
 .link-card-bilibili:hover {
     background: #fb7299;
     color: #fff;
@@ -78,12 +86,6 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.link-card:hover {
-    background: #333;
-    color: #ccc;
-    box-shadow: 2px 2px 15px #333;
-    transition: all 0.3s ease-in-out;
-}
 
 .link-card:hover .link-card-text {
     color: #ccc;
@@ -95,7 +97,7 @@ a {
 }
 
 .icon{
-    font-size:.7em;
+    font-size:.9em !important;
 }
 .cover {
     position: relative;
