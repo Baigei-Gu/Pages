@@ -20,6 +20,7 @@ body {
     box-shadow: 2px 2px 15px #ccc;
     margin: 5%;
     padding: 5%;
+    vertical-align: baseline;
 }
 
 h1,
