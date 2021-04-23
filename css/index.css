@@ -5,7 +5,6 @@
 }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
     padding: 0;
     border: 0;
     vertical-align: baseline;
@@ -16,7 +15,6 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 body {
     display: flex;
     flex-direction: column;
-    text-align: center;
     box-shadow: 2px 2px 15px #ccc;
     margin: 5%;
     padding: 5%;
@@ -44,17 +42,18 @@ a {
 }
 
 .link-card {
-
+    display:flex;
     margin: 0 auto;
     box-shadow: 2px 2px 15px #ccc;
-    height: 30%;
+
     width: 80%;
     font-size: 3.5em;
-    font-weight: 500;
+
     padding: .2em;
-    margin-bottom: 5%;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.85, 0, 0.15, 1)
     z-index: 5;
+    align-items: center; 
+    justify-content: center;
 }
 
 
@@ -73,12 +72,15 @@ a {
 }
 .link-card-bilibili:hover .icon-bilibili{
     color:#fff;
+    transition: all 0.3s ease-in-out;
 }
 .link-card-bilibili:hover .link-card-text-bilibili {
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 .link-card-github:hover .link-card-text-github {
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 
 .link-card-text-bilibili,
@@ -103,7 +105,7 @@ a {
 .cover {
     position: relative;
     width: 30%;
-    border-radius: 50em;
+    border-radius: .5em;
     box-shadow: 2px 2px 15px #ccc;
     transition: all 0.5s ease-in-out;
 }
@@ -119,7 +121,7 @@ a {
 
 @media screen and (max-width:600px) {
      :root {
-        font-size: 4.5vmin;
+        font-size: 3vmin;
     }
     .link-card-text {
         font-size: .8em;
